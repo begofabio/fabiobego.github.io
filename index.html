@@ -1,10 +1,283 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Fabio Bego</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            background: #050805;
+            color: #7CFF00;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        .page {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           BIO
+        ========================= */
+
+        .bio {
+            border: 2px solid #7CFF00;
+            padding: 40px;
+            min-height: 380px;
+            margin-bottom: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .label {
+            font-size: 13px;
+            letter-spacing: 3px;
+        }
+
+        .bio h1 {
+            font-size: clamp(42px, 7vw, 80px);
+            margin: 20px 0;
+            letter-spacing: -3px;
+        }
+
+        .bio p {
+            max-width: 900px;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .status {
+            margin-top: 30px;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+
+        /* =========================
+           LINKS
+        ========================= */
+
+        .links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .link {
+            min-height: 240px;
+
+            border: 2px solid #7CFF00;
+            padding: 30px;
+
+            color: #7CFF00;
+            text-decoration: none;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            transition: background 0.15s ease,
+                        color 0.15s ease;
+        }
+
+        .link:hover {
+            background: #7CFF00;
+            color: #050805;
+        }
+
+        .number {
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        .link-name {
+            font-size: clamp(24px, 4vw, 42px);
+            letter-spacing: -1px;
+        }
+
+
+        /* =========================
+           BLINKING CURSOR
+        ========================= */
+
+        .cursor {
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+
+            50% {
+                opacity: 0;
+            }
+
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            body {
+                padding: 15px;
+            }
+
+            .bio {
+                padding: 25px;
+                min-height: 420px;
+            }
+
+            .bio h1 {
+                font-size: 42px;
+            }
+
+            .bio p {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            .links {
+                grid-template-columns: 1fr;
+            }
+
+            .link {
+                min-height: 180px;
+            }
+
+        }
+
+    </style>
+
 </head>
+
+
 <body>
-    <h1>Fabio Bego</h1>
-    <p>Welcome to my personal website.</p>
+
+    <div class="page">
+
+
+        <!-- =========================
+             BIO
+        ========================= -->
+
+        <section class="bio">
+
+            <div class="label">
+                BIO_01
+            </div>
+
+            <h1>
+                FABIO BEGO
+            </h1>
+
+            <p>
+                I’m an independent researcher focused on Balkan histories
+                and narratives in relation to broader European and
+                transnational contexts. My work draws on a range of sources,
+                from archival documents to audio-visual material.
+                My main interests revolve around the intersections between
+                the state, nationalism, racism, and socialism.
+                Besides publishing essays in academic journals and magazines,
+                I organise film screenings.
+            </p>
+
+            <div class="status">
+                STATUS: ONLINE <span class="cursor">_</span>
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             FOUR SECTIONS
+        ========================= -->
+
+        <section class="links">
+
+
+            <!-- RESEARCH -->
+
+            <a href="#" class="link">
+
+                <span class="number">
+                    01
+                </span>
+
+                <span class="link-name">
+                    RESEARCH
+                </span>
+
+            </a>
+
+
+
+            <!-- WRITING -->
+
+            <a href="#" class="link">
+
+                <span class="number">
+                    02
+                </span>
+
+                <span class="link-name">
+                    WRITING
+                </span>
+
+            </a>
+
+
+
+            <!-- FILM PROGRAMMING -->
+
+            <a href="#" class="link">
+
+                <span class="number">
+                    03
+                </span>
+
+                <span class="link-name">
+                    FILM PROGRAMMING
+                </span>
+
+            </a>
+
+
+
+            <!-- SURVIVING THE NEW FASCIST EUROPE -->
+
+            <a href="#" class="link">
+
+                <span class="number">
+                    04
+                </span>
+
+                <span class="link-name">
+                    SURVIVING THE NEW FASCIST EUROPE
+                </span>
+
+            </a>
+
+
+        </section>
+
+
+    </div>
+
 </body>
+
 </html>
