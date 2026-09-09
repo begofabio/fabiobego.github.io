@@ -48,9 +48,10 @@
         }
 
         .bio h1 {
-            font-size: clamp(42px, 7vw, 80px);
+            font-size: clamp(32px, 5vw, 55px);
             margin: 20px 0;
-            letter-spacing: -3px;
+            letter-spacing: 0;
+            font-weight: normal;
         }
 
         .bio p {
@@ -86,26 +87,49 @@
             text-decoration: none;
 
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
 
             transition: background 0.15s ease,
-                        color 0.15s ease;
-        }
-
-        .link:hover {
-            background: #7CFF00;
-            color: #050805;
-        }
-
-        .number {
-            font-size: 14px;
-            letter-spacing: 2px;
+                        color 0.15s ease,
+                        border-color 0.15s ease;
         }
 
         .link-name {
             font-size: clamp(24px, 4vw, 42px);
-            letter-spacing: -1px;
+            letter-spacing: 0;
+            font-weight: normal;
+        }
+
+
+        /* =========================
+           HOVER COLOURS
+        ========================= */
+
+        .research:hover {
+            background: red;
+            color: #050805;
+            border-color: red;
+        }
+
+        .writing:hover {
+            background: blue;
+            color: #050805;
+            border-color: blue;
+        }
+
+        .film:hover {
+            background: #7CFF00;
+            color: #050805;
+            border-color: #7CFF00;
+        }
+
+        .fascist:hover {
+            background: hotpink;
+            color: #050805;
+            border-color: hotpink;
         }
 
 
@@ -142,7 +166,7 @@
             }
 
             .bio h1 {
-                font-size: 42px;
+                font-size: 36px;
             }
 
             .bio p {
@@ -212,11 +236,7 @@
 
             <!-- RESEARCH -->
 
-            <a href="#" class="link">
-
-                <span class="number">
-                    01
-                </span>
+            <a href="#" class="link research">
 
                 <span class="link-name">
                     RESEARCH
@@ -228,11 +248,7 @@
 
             <!-- WRITING -->
 
-            <a href="#" class="link">
-
-                <span class="number">
-                    02
-                </span>
+            <a href="#" class="link writing">
 
                 <span class="link-name">
                     WRITING
@@ -244,11 +260,7 @@
 
             <!-- FILM PROGRAMMING -->
 
-            <a href="#" class="link">
-
-                <span class="number">
-                    03
-                </span>
+            <a href="#" class="link film">
 
                 <span class="link-name">
                     FILM PROGRAMMING
@@ -260,11 +272,7 @@
 
             <!-- SURVIVING THE NEW FASCIST EUROPE -->
 
-            <a href="#" class="link">
-
-                <span class="number">
-                    04
-                </span>
+            <a href="#" class="link fascist">
 
                 <span class="link-name">
                     SURVIVING THE NEW FASCIST EUROPE
