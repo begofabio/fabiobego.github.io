@@ -19,6 +19,7 @@
             background: #050805;
             color: #7CFF00;
             font-family: "Courier New", Courier, monospace;
+            font-weight: normal;
         }
 
         .page {
@@ -26,6 +27,40 @@
             margin: auto;
         }
 
+        /* =========================
+           HEADER
+        ========================= */
+
+        .header {
+            min-height: 70px;
+            border-top: 2px solid #7CFF00;
+            border-bottom: 2px solid #7CFF00;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 28px;
+            letter-spacing: 0;
+            font-weight: normal;
+        }
+
+        .contact {
+            color: #7CFF00;
+            text-decoration: none;
+            font-size: 16px;
+            letter-spacing: 1px;
+
+            transition: color 0.15s ease;
+        }
+
+        .contact:hover {
+            color: white;
+        }
 
         /* =========================
            BIO
@@ -39,33 +74,15 @@
 
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .label {
-            font-size: 13px;
-            letter-spacing: 3px;
-        }
-
-        .bio h1 {
-            font-size: clamp(32px, 5vw, 55px);
-            margin: 20px 0;
-            letter-spacing: 0;
-            font-weight: normal;
+            justify-content: center;
         }
 
         .bio p {
             max-width: 900px;
             font-size: 18px;
             line-height: 1.7;
+            margin: 0;
         }
-
-        .status {
-            margin-top: 30px;
-            font-size: 13px;
-            letter-spacing: 2px;
-        }
-
 
         /* =========================
            LINKS
@@ -92,9 +109,10 @@
 
             text-align: center;
 
-            transition: background 0.15s ease,
-                        color 0.15s ease,
-                        border-color 0.15s ease;
+            transition:
+                background 0.15s ease,
+                color 0.15s ease,
+                border-color 0.15s ease;
         }
 
         .link-name {
@@ -102,7 +120,6 @@
             letter-spacing: 0;
             font-weight: normal;
         }
-
 
         /* =========================
            HOVER COLOURS
@@ -132,24 +149,6 @@
             border-color: hotpink;
         }
 
-
-        /* =========================
-           BLINKING CURSOR
-        ========================= */
-
-        .cursor {
-            animation: blink 1s steps(1) infinite;
-        }
-
-        @keyframes blink {
-
-            50% {
-                opacity: 0;
-            }
-
-        }
-
-
         /* =========================
            MOBILE
         ========================= */
@@ -160,13 +159,21 @@
                 padding: 15px;
             }
 
+            .header {
+                min-height: 60px;
+            }
+
+            .name {
+                font-size: 22px;
+            }
+
+            .contact {
+                font-size: 14px;
+            }
+
             .bio {
                 padding: 25px;
                 min-height: 420px;
-            }
-
-            .bio h1 {
-                font-size: 36px;
             }
 
             .bio p {
@@ -188,27 +195,33 @@
 
 </head>
 
-
 <body>
 
     <div class="page">
 
+        <!-- HEADER -->
 
-        <!-- =========================
-             BIO
-        ========================= -->
+        <header class="header">
+
+            <div class="name">
+                FABIO BEGO
+            </div>
+
+            <a href="#" class="contact">
+                CONTACT
+            </a>
+
+        </header>
+
+
+        <!-- BIO -->
 
         <section class="bio">
 
-            <div class="label">
-                BIO_01
-            </div>
-
-            <h1>
-                FABIO BEGO
-            </h1>
-
             <p>
+                Welcome to my webpage.
+                <br><br>
+
                 I’m an independent researcher focused on Balkan histories
                 and narratives in relation to broader European and
                 transnational contexts. My work draws on a range of sources,
@@ -217,72 +230,45 @@
                 the state, nationalism, racism, and socialism.
                 Besides publishing essays in academic journals and magazines,
                 I organise film screenings.
-            </p>
+                <br><br>
 
-            <div class="status">
-                STATUS: ONLINE <span class="cursor">_</span>
-            </div>
+                On this site, you’ll find links to my work, information
+                about my current projects, and reflections on how to cope
+                with the increasing far-right trends.
+            </p>
 
         </section>
 
 
-
-        <!-- =========================
-             FOUR SECTIONS
-        ========================= -->
+        <!-- FOUR SECTIONS -->
 
         <section class="links">
 
-
-            <!-- RESEARCH -->
-
             <a href="#" class="link research">
-
                 <span class="link-name">
                     RESEARCH
                 </span>
-
             </a>
 
-
-
-            <!-- WRITING -->
-
             <a href="#" class="link writing">
-
                 <span class="link-name">
                     WRITING
                 </span>
-
             </a>
 
-
-
-            <!-- FILM PROGRAMMING -->
-
             <a href="#" class="link film">
-
                 <span class="link-name">
                     FILM PROGRAMMING
                 </span>
-
             </a>
 
-
-
-            <!-- SURVIVING THE NEW FASCIST EUROPE -->
-
             <a href="#" class="link fascist">
-
                 <span class="link-name">
                     SURVIVING THE NEW FASCIST EUROPE
                 </span>
-
             </a>
 
-
         </section>
-
 
     </div>
 
