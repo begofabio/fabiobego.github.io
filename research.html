@@ -19,6 +19,7 @@
             background: #050805;
             color: #7CFF00;
             font-family: "Courier New", Courier, monospace;
+            font-weight: normal;
         }
 
         .page {
@@ -26,72 +27,548 @@
             margin: auto;
         }
 
+        /* =========================
+           HEADER
+        ========================= */
+
         .header {
+            min-height: 70px;
+
             border-top: 2px solid #7CFF00;
             border-bottom: 2px solid #7CFF00;
 
-            padding: 20px 0;
-
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
+
+            margin-bottom: 20px;
         }
 
-        .header a {
+        .name {
+            font-size: 22px;
+            font-weight: normal;
+        }
+
+        .back {
             color: #7CFF00;
             text-decoration: none;
+            font-size: 16px;
+
+            transition: color 0.15s ease;
         }
+
+        .back:hover {
+            color: #B6FF66;
+        }
+
+        /* =========================
+           MAIN CONTENT
+        ========================= */
 
         .content {
             border: 2px solid #7CFF00;
 
-            margin-top: 20px;
             padding: 40px;
 
-            min-height: 500px;
+            margin-bottom: 20px;
         }
 
         h1 {
-            font-size: 48px;
-            font-weight: normal;
             margin-top: 0;
+            margin-bottom: 50px;
+
+            font-size: 42px;
+            font-weight: normal;
         }
 
-        p {
-            max-width: 800px;
-            font-size: 18px;
-            line-height: 1.7;
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        .section {
+            margin-bottom: 55px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: normal;
+
+            border-bottom: 1px solid #7CFF00;
+
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        /* =========================
+           PUBLICATIONS
+        ========================= */
+
+        .publication {
+            margin-bottom: 28px;
+
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .publication a {
+            color: #7CFF00;
+            text-decoration: none;
+
+            transition: color 0.15s ease;
+        }
+
+        .publication a:hover {
+            color: #B6FF66;
+        }
+
+        .title {
+            font-style: italic;
+        }
+
+        /* =========================
+           PEER REVIEWS
+        ========================= */
+
+        .review-list {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            body {
+                padding: 15px;
+            }
+
+            .header {
+                min-height: 60px;
+            }
+
+            .name {
+                font-size: 18px;
+            }
+
+            .back {
+                font-size: 14px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 32px;
+                margin-bottom: 40px;
+            }
+
+            .section-title {
+                font-size: 18px;
+            }
+
+            .publication {
+                font-size: 15px;
+            }
+
         }
 
     </style>
 
 </head>
 
+
 <body>
 
     <div class="page">
 
+        <!-- HEADER -->
+
         <header class="header">
 
-            <a href="index.html">
+            <div class="name">
                 FABIO BEGO
-            </a>
+            </div>
 
-            <a href="index.html">
+            <a href="index.html" class="back">
                 BACK
             </a>
 
         </header>
 
 
+        <!-- CONTENT -->
+
         <main class="content">
 
             <h1>RESEARCH</h1>
 
-            <p>
-                This section will contain information about my research,
-                projects, archival work and other research activities.
-            </p>
+
+            <!-- =========================
+                 SPECIAL ISSUES EDITOR
+            ========================= -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    SPECIAL ISSUES EDITOR
+                </div>
+
+                <div class="publication">
+
+                    Bego, F. "Editorial Note" 
+                    <a href="https://www.iluminace.cz/contents/ilu/2026/01.pdf" target="_blank">
+                        <span class="title">Iluminace</span>
+                    </a>,
+                    1, 2026, special issue "Anarchiving and Archival Asymmetry:
+                    Short Films in the Balkans and Eastern Europe",
+                    (with Ana Grgic and Irina Tcherneva), 5–15.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. (forthcoming in 2026)
+                    "Dossier on short films and emotions",
+                    <span class="title">SineCine</span>,
+                    Erdogan, N., Nogueira, P.
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 PEER-REVIEWED JOURNALS
+            ========================= -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    ARTICLES IN PEER-REVIEWED JOURNALS
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F., Grgić, A. 2024.
+                    <a href="https://www.tandfonline.com/doi/abs/10.1080/2040350X.2024.2321038" target="_blank">
+                        <span class="title">Useful Bodies, Socialist Commodification and Everyday Culture:
+                        Promoting Albanian and Yugoslav Industrial Production Through Non-Fiction Films</span>
+                    </a>,
+                    <span class="title">Studies in Eastern European Cinema</span>, 3, 1–20.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2022.
+                    <a href="https://www.researchgate.net/publication/369826800_Official_Diffidence_vs_Underground_Cooperation-_Albanian-Bulgarian_Relations_After_the_Great_War" target="_blank">
+                        <span class="title">Official Diffidence vs. Underground Cooperation:
+                        Albanian-Bulgarian Relations After the Great War</span>
+                    </a>,
+                    <span class="title">Istoričeski Pregled</span>, 4, 59–78.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2022.
+                    <a href="https://www.researchgate.net/publication/357809924_On_Authenticity_and_Popular_Culture" target="_blank">
+                        <span class="title">On Authenticity and Popular Culture</span>
+                    </a>,
+                    <span class="title">Kwartalnik Filmowy</span>, 116, 242–250.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2022.
+                    <a href="https://www.researchgate.net/publication/353108530_The_sound_of_the_other_Albanian-Italian_relations_and_Kinostudio_films" target="_blank">
+                        <span class="title">The Sound of the Other:
+                        Albanian-Italian Relations and Kinostudio Films</span>
+                    </a>,
+                    <span class="title">Studies in Eastern European Cinema</span>, 1, 3–20.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2020.
+                    <a href="https://www.researchgate.net/publication/334091752_Beyond_the_Albanian-Slav_Divide_Political_Cooperation_and_National_Identities_in_the_Balkans_at_the_Turn_of_the_Twentieth_Century" target="_blank">
+                        <span class="title">Beyond the Albanian-Slav Divide:
+                        Political Cooperation and National Identities in the Balkans
+                        at the Turn of the Twentieth Century</span>
+                    </a>,
+                    <span class="title">Eastern European Politics and Societies and Cultures</span>,
+                    1, 25–47.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2019.
+                    <a href="https://www.researchgate.net/publication/337426463_The_Impact_of_Nationalism_on_Albanian-Slav_Relations_in_Late_Ottoman_Macedonia_A_Historiographical_Review" target="_blank">
+                        <span class="title">The Impact of Nationalism on Albanian-Slav Relations
+                        in Macedonia between the 19th and the 20th century:
+                        A Historiographical Review</span>
+                    </a>,
+                    <span class="title">Nationalities Papers</span>, 6, 1117–1130.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2018.
+                    <a href="https://www.researchgate.net/publication/338548708_Albanian-Bulgarian_Relations_in_the_Frame_of_the_Great_War_Initiatives_doubts_and_failures" target="_blank">
+                        <span class="title">Albanian-Bulgarian Relations in the Frame of the Great War:
+                        Initiatives, Doubts and Failures</span>
+                    </a>,
+                    <span class="title">Makedonski Pregled</span>, 4, 67–90.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2014.
+                    <a href="https://www.researchgate.net/publication/276367255_La_storia_dell'Albania_dal_1997_e_l'identita_albanese_del_post-comunismo" target="_blank">
+                        <span class="title">La storia dell'Albania dal 1997 e l'identità
+                        albanese del post-comunismo</span>
+                    </a>,
+                    <span class="title">Storicamente</span>, 10, 1–26.
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 BOOK CHAPTERS
+            ========================= -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    BOOK CHAPTERS
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2020.
+                    <a href="https://iris.uniroma3.it/retrieve/e397d80e-6c77-b0e0-e053-6605fe0a1c76/Invito%20al%20viaggio.%20In%20Albania.%20edito%202.pdf" target="_blank">
+                        <span class="title">La Formazione e/o l'Invenzione della Nazione Albanese</span>
+                    </a>,
+                    <span class="title">Invito al viaggio in Albania</span>,
+                    Roma Tre Press, Roma, 71–73.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2019.
+                    <a href="https://www.researchgate.net/publication/338548957_La_fine_della_Grande_Guerra_nelle_riflessioni_degli_albanesi_Il_conflitto_i_vicini_lo_Stato_e_l'avvenire" target="_blank">
+                        <span class="title">La fine della grande guerra nelle riflessioni degli albanesi.
+                        Il conflitto, i vicini, lo Stato e l'avvenire</span>
+                    </a>.
+                    In Francesco Guida (ed.),
+                    <span class="title">Il Sud-est europeo e l'Adriatico. Studi Italiani</span>,
+                    Aracne Editrice, Roma.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2018.
+                    <a href="https://www.researchgate.net/publication/321493621_The_Vlora_Conflict_from_a_Trans-Adriatic_Perspective_History_Myth_and_Ideology" target="_blank">
+                        <span class="title">The Vlora Conflict from a Trans-Adriatic Perspective:
+                        History, Myth and Ideology</span>
+                    </a>.
+                    In Lichnofsky, C., Pandelejmoni, E., Stojanov, D. (eds.),
+                    <span class="title">Conditions and Challenges for History Textbooks
+                    in Albania and South-Eastern Europe</span>,
+                    V&R Unipress, Göttingen, 97–135.
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 COMMISSIONED REPORTS
+            ========================= -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    COMMISSIONED REPORTS
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2021.
+                    <a href="https://www.researchgate.net/publication/349456423_State_of_Hate_Report_2021_-_Spotlight_on_the_Western_Balkans_Far-Right_Trends_in_the_Region" target="_blank">
+                        <span class="title">Spotlight on the Western Balkans:
+                        Far-Right Trends in the Region</span>
+                    </a>,
+                    <span class="title">State of Hate: Far-Right Extremism in Europe 2021</span>,
+                    edited by Joe Mulhall and Safya Khan-Ruf, 46–52.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2021.
+                    <a href="https://www.researchgate.net/publication/349476742_State_of_Hate_Report_2021_-_Country_by_Country_Section_Albania_Far-right_trends_in_Albania" target="_blank">
+                        <span class="title">Albania</span>
+                    </a>,
+                    <span class="title">State of Hate: Far-Right Extremism in Europe 2021</span>,
+                    edited by Joe Mulhall and Safya Khan-Ruf, 59–62.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2021.
+                    <a href="https://www.researchgate.net/publication/349476832_State_of_Hate_Report_2021_-_Country_by_Country_Section_Serbia_Far-right_trends_in_Serbia" target="_blank">
+                        <span class="title">Serbia</span>
+                    </a>,
+                    <span class="title">State of Hate: Far-Right Extremism in Europe 2021</span>,
+                    edited by Joe Mulhall and Safya Khan-Ruf, 109–113.
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 BOOK AND FILM REVIEWS
+            ========================= -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    BOOK AND FILM REVIEWS
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2024.
+                    <a href="https://www.tandfonline.com/doi/full/10.1080/2040350X.2024.2324641" target="_blank">
+                        <span class="title">Films as the Spectre of the Country's History</span>
+                    </a>.
+                    Review of Bruce Williams,
+                    <span class="title">Albanian Cinema Through the Fall of Communism:
+                    Silver Screens and Red Flags</span>,
+                    <span class="title">Studies in Eastern European Cinema</span>, 280–383.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2023.
+                    <a href="https://www.researchgate.net/publication/369118586_Film_Review_Dune" target="_blank">
+                        <span class="title">A Review of Dune</span>
+                    </a>
+                    (Denis Villeneuve, 2021),
+                    <span class="title">Black Camera</span>, 2, 404–407.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2022.
+                    <a href="https://eefb.org/perspectives/eduart-grishajs-sophia-sofia-2022/?pdf=9702" target="_blank">
+                        <span class="title">Love and National Prejudice:
+                        Eduart Grishaj's Sophia (2022)</span>
+                    </a>,
+                    <span class="title">Eastern European Film Bulletin</span>, 130,
+                    online publication.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2016.
+                    Thomas Maissen,
+                    <span class="title">Svizzera: Storia di una Federazione</span>,
+                    Beit, Trieste, 2015,
+                    <span class="title">Nuova Rivista Storica</span>, 2, 758–762.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2015.
+                    Francesco Guida, Cornel Constantin Ilie, Ana Victoria Sima (eds.),
+                    <span class="title">I Romeni e la Grande Guerra 1914–2014:
+                    Mostra Fotodocumentaria in Occasione del Centennario
+                    della Grande Guerra</span>,
+                    Institut Cultural Român, 2014,
+                    <span class="title">Nuova Rivista Storica</span>, 2, 722–723.
+
+                </div>
+
+
+                <div class="publication">
+
+                    Bego, F. 2013.
+                    Isa Blumi,
+                    <span class="title">Reinstating the Ottomans:
+                    Alternative Balkan Modernities, 1800–1912</span>,
+                    Palgrave Macmillan, New York, 2012,
+                    <span class="title">Storicamente</span>, 9,
+                    online publication.
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 PEER REVIEWS
+            ========================= -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    PEER REVIEWS
+                </div>
+
+                <div class="review-list">
+
+                    Nationalities Papers<br>
+                    Bulgarian Historical Review<br>
+                    Studies in Eastern European Cinema<br>
+                    Journal of Muslims of Europe<br>
+                    Journal of World Cinema<br>
+                    Qualestoria<br>
+                    Istoričeski Pregled<br>
+                    Istoriya – History
+
+                </div>
+
+            </section>
 
         </main>
 
