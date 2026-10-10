@@ -1,4 +1,8 @@
-ent="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Survive the New Fascist Europe — Fabio Bego</title>
     <style>
         * {
@@ -26,7 +30,7 @@ ent="width=device-width, initial-scale=1.0">
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 25px;
+            margin-bottom: 40px;
         }
 
         .site-name {
@@ -48,43 +52,15 @@ ent="width=device-width, initial-scale=1.0">
 
         .content-frame {
             border: 2px solid #7CFF00;
-            padding: 30px;
+            padding: 80px 20px;
             background: #000000;
             text-align: center;
         }
 
-        h1 {
-            font-size: 28px;
-            font-weight: normal;
-            margin: 0 0 25px 0;
-            letter-spacing: 1px;
-        }
-
-        .graphic-frame {
-            border: 1px dashed #7CFF00;
-            padding: 15px;
-            margin: 0 auto 30px auto;
-            max-width: 750px;
-            background: #050805;
-        }
-
-        /* High-Detail Vector Display */
-        .embedded-artwork {
-            width: 100%;
-            max-width: 680px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            image-rendering: pixelated;
-        }
-
         /* Intermittent Blinking "COMING SOON" */
         .coming-soon-box {
-            font-size: 24px;
-            letter-spacing: 3px;
-            margin-top: 20px;
-            padding: 15px;
-            border-top: 1px solid #7CFF00;
+            font-size: 28px;
+            letter-spacing: 4px;
         }
 
         .blink {
@@ -97,10 +73,9 @@ ent="width=device-width, initial-scale=1.0">
 
         @media (max-width: 700px) {
             body { padding: 15px; }
-            .content-frame { padding: 15px; }
+            .content-frame { padding: 50px 15px; }
             .site-name { font-size: 16px; }
-            h1 { font-size: 20px; }
-            .coming-soon-box { font-size: 18px; }
+            .coming-soon-box { font-size: 20px; letter-spacing: 2px; }
         }
     </style>
 </head>
@@ -113,101 +88,11 @@ ent="width=device-width, initial-scale=1.0">
     </header>
 
     <main class="content-frame">
+        <div class="coming-soon-box">
+            <span class="blink">COMING SOON</span>
+        </div>
+    </main>
 
-        <h1>HOW TO SURVIVE THE NEW FASCIST EUROPE</h1>
-
-        <!-- High-Detail Embedded Artwork Container -->
-        <div class="graphic-frame">
-            
-            <svg class="embedded-artwork" viewBox="0 0 600 380" fill="#7CFF00" xmlns="http://www.w3.org/2000/svg">
-                <!-- Background Environment / Alleyway Perspective -->
-                <rect x="0" y="0" width="600" height="380" fill="#050805"/>
-                <rect x="10" y="10" width="580" height="360" fill="none" stroke="#7CFF00" stroke-width="1" stroke-dasharray="4"/>
-
-                <!-- Left Building Bricks Grid -->
-                <g opacity="0.35">
-                    <line x1="20" y1="20" x2="180" y2="100" stroke="#7CFF00" stroke-width="1"/>
-                    <line x1="20" y1="360" x2="180" y2="300" stroke="#7CFF00" stroke-width="1"/>
-                    <line x1="20" y1="80" x2="180" y2="135" stroke="#7CFF00" stroke-width="0.5"/>
-                    <line x1="20" y1="140" x2="180" y2="170" stroke="#7CFF00" stroke-width="0.5"/>
-                    <line x1="20" y1="200" x2="180" y2="205" stroke="#7CFF00" stroke-width="0.5"/>
-                    <line x1="20" y1="260" x2="180" y2="240" stroke="#7CFF00" stroke-width="0.5"/>
-                    <rect x="40" y="60" width="30" height="50" fill="none" stroke="#7CFF00" stroke-width="1"/>
-                    <rect x="100" y="90" width="35" height="55" fill="none" stroke="#7CFF00" stroke-width="1"/>
-                </g>
-
-                <!-- Right Building & Roll-Up Door -->
-                <g opacity="0.35">
-                    <line x1="580" y1="20" x2="420" y2="100" stroke="#7CFF00" stroke-width="1"/>
-                    <line x1="580" y1="360" x2="420" y2="300" stroke="#7CFF00" stroke-width="1"/>
-                    <rect x="440" y="150" width="110" height="130" fill="none" stroke="#7CFF00" stroke-width="1"/>
-                    <line x1="440" y1="170" x2="550" y2="170" stroke="#7CFF00" stroke-width="1"/>
-                    <line x1="440" y1="190" x2="550" y2="190" stroke="#7CFF00" stroke-width="1"/>
-                    <line x1="440" y1="210" x2="550" y2="210" stroke="#7CFF00" stroke-width="1"/>
-                    <line x1="440" y1="230" x2="550" y2="230" stroke="#7CFF00" stroke-width="1"/>
-                    <line x1="440" y1="250" x2="550" y2="250" stroke="#7CFF00" stroke-width="1"/>
-                </g>
-
-                <!-- Center Chain-Link Fence & Barren Tree -->
-                <g opacity="0.4">
-                    <line x1="180" y1="100" x2="420" y2="100" stroke="#7CFF00" stroke-width="1"/>
-                    <line x1="180" y1="300" x2="420" y2="300" stroke="#7CFF00" stroke-width="1"/>
-                    <line x1="180" y1="200" x2="420" y2="200" stroke="#7CFF00" stroke-width="1"/>
-                    <line x1="240" y1="100" x2="240" y2="300" stroke="#7CFF00" stroke-width="1"/>
-                    <line x1="360" y1="100" x2="360" y2="300" stroke="#7CFF00" stroke-width="1"/>
-                    <!-- Tree silhouette -->
-                    <path d="M370 200 L375 130 L360 100 M375 150 L390 120 M375 165 L385 145" stroke="#7CFF00" stroke-width="1.5" fill="none"/>
-                </g>
-
-                <!-- THE HOOKMAN (Detailed Back View Centered) -->
-                <g>
-                    <!-- Wide Fedora Hat Brim & Crown -->
-                    <path d="M260 90 Q300 85 340 90 L330 70 Q300 65 270 70 Z" stroke="#7CFF00" stroke-width="2"/>
-                    <ellipse cx="300" cy="92" rx="50" ry="6"/>
-
-                    <!-- Collar & Broad Shoulders -->
-                    <path d="M245 105 L260 95 L340 95 L355 105 L370 125 L230 125 Z"/>
-
-                    <!-- Main Shearling Trench Coat (Rear View Structure) -->
-                    <path d="M230 125 L240 220 L235 290 L365 290 L360 220 L370 125 Z"/>
-                    
-                    <!-- Center Back Seam & Waist Belt Strap -->
-                    <line x1="300" y1="125" x2="300" y2="290" stroke="#050805" stroke-width="2"/>
-                    <rect x="242" y="185" width="116" height="12" fill="#050805" stroke="#7CFF00" stroke-width="1"/>
-
-                    <!-- Worn Coat Patches & Stitches -->
-                    <rect x="315" y="135" width="22" height="28" stroke="#050805" stroke-width="2"/>
-                    <line x1="312" y1="135" x2="339" y2="135" stroke="#050805" stroke-width="1" stroke-dasharray="2"/>
-                    <rect x="252" y="225" width="28" height="32" stroke="#050805" stroke-width="2"/>
-
-                    <!-- Left Arm Sleeve & Cuff -->
-                    <path d="M230 125 L215 190 L235 195 L245 140 Z"/>
-                    <rect x="212" y="190" width="25" height="10" stroke="#050805" stroke-width="1"/>
-
-                    <!-- Right Arm Sleeve, Cuff & Large Industrial Hook -->
-                    <path d="M370 125 L385 190 L365 195 L355 140 Z"/>
-                    <rect x="363" y="190" width="25" height="10" stroke="#050805" stroke-width="1"/>
-                    
-                    <!-- THE RUSTY HOOK (Curved Detail) -->
-                    <path d="M375 200 C375 240, 415 235, 410 205 C408 190, 395 195, 395 205" fill="none" stroke="#7CFF00" stroke-width="5" stroke-linecap="round"/>
-
-                    <!-- Trousers & Heavy Boots -->
-                    <rect x="258" y="290" width="32" height="55"/>
-                    <rect x="310" y="290" width="32" height="55"/>
-                    <path d="M250 345 L292 345 L290 355 L248 355 Z"/>
-                    <path d="M308 345 L350 345 L352 355 L310 355 Z"/>
-                </g>
-
-                <!-- Swarming Bees Dotted Field -->
-                <g opacity="0.85">
-                    <circle cx="210" cy="110" r="1.5"/><circle cx="200" cy="160" r="2"/><circle cx="225" cy="230" r="1.5"/>
-                    <circle cx="180" cy="250" r="2"/><circle cx="390" cy="100" r="1.5"/><circle cx="410" cy="140" r="2"/>
-                    <circle cx="425" cy="170" r="1.5"/><circle cx="430" cy="240" r="2"/><circle cx="380" cy="270" r="1.5"/>
-                    <circle cx="280" cy="60" r="2"/><circle cx="320" cy="50" r="1.5"/><circle cx="160" cy="290" r="2"/>
-                </g>
-            </svg>
-
-            <!-- ONLY "COMING SOON" BLINKING UNDERNEATH -->
-            <div class="coming-soon-box">
-                <span class="blink">COMING SOON</span>
-            </div>
+</div>
+</body>
+</html>
