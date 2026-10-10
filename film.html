@@ -1,1 +1,229 @@
-<h1>Film Programming Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Programming — Fabio Bego</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            background: #050805;
+            color: #7CFF00;
+            font-family: "Courier New", Courier, monospace;
+            font-weight: normal;
+        }
+
+        .page {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .header {
+            min-height: 70px;
+            border-top: 2px solid #7CFF00;
+            border-bottom: 2px solid #7CFF00;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 22px;
+            letter-spacing: 0;
+            font-weight: normal;
+        }
+
+        .back {
+            color: #7CFF00;
+            text-decoration: none;
+            font-size: 16px;
+            letter-spacing: 1px;
+            transition: color 0.15s ease;
+        }
+
+        .back:hover {
+            color: #B6FF66;
+        }
+
+        .content {
+            border: 2px solid #7CFF00;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: normal;
+            margin: 0 0 50px 0;
+            letter-spacing: 0;
+        }
+
+        .section {
+            margin-bottom: 55px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #7CFF00;
+        }
+
+        .section-title a {
+            color: #7CFF00;
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+
+        .section-title a:hover {
+            color: #B6FF66;
+        }
+
+        .program-description {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0 0 15px 0;
+        }
+
+        .press-section {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+
+        .press-item {
+            margin-top: 6px;
+        }
+
+        .press-section a {
+            color: #7CFF00;
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+
+        .press-section a:hover {
+            color: #B6FF66;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 15px;
+            }
+
+            .header {
+                min-height: 60px;
+            }
+
+            .name {
+                font-size: 18px;
+            }
+
+            .back {
+                font-size: 14px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 32px;
+                margin-bottom: 40px;
+            }
+
+            .section-title {
+                font-size: 18px;
+            }
+
+            .program-description,
+            .press-section {
+                font-size: 15px;
+                line-height: 1.6;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <header class="header">
+        <div class="name">
+            FABIO BEGO
+        </div>
+        <a href="index.html" class="back">BACK</a>
+    </header>
+
+    <main class="content">
+
+        <h1>FILM SCREENING PROGRAMS</h1>
+
+        <!-- ARENA XI -->
+        <section class="section">
+            <div class="section-title">
+                2025–2026 | <a href="https://culturalpro.art/categorie/costruire-comunita/arena-11-cinema-e-comunita/" target="_blank" rel="noopener noreferrer">Arena XI - Rome</a>
+            </div>
+            <p class="program-description">
+                A series of films that explore the social and political features of the Marconi neighbourhood and of the city of Rome from a trans-national and inter-cultural perspective. The selections 2025 and 2026 have dealt with work and alienation in order to challenge exploitation, racism and gender discrimination.
+            </p>
+            <div class="press-section">
+                <strong>Press:</strong>
+                <div class="press-item">
+                    • <a href="https://www.ilmessaggero.it/roma/portuense/arena_11_cinema_torna_tevere_raccontare_citta_fatta_di_comunita_differenze-9732119.html" target="_blank" rel="noopener noreferrer">Arena 11 cinema torna sul Tevere per raccontare una città fatta di comunità e differenze — Il Messaggero</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUONI FUORI DAGLI SCHERMI -->
+        <section class="section">
+            <div class="section-title">
+                2022 | <a href="https://www.facebook.com/suonifuoridaglischermi/" target="_blank" rel="noopener noreferrer">Suoni Fuori Dagli Schermi - Rome</a>
+            </div>
+            <p class="program-description">
+                An event celebrating the synergy of cinema and music combining film screenings with live music performances.
+            </p>
+        </section>
+
+        <!-- KINOSTORIES -->
+        <section class="section">
+            <div class="section-title">
+                2022 | <a href="https://www.facebook.com/Kinostories/" target="_blank" rel="noopener noreferrer">Kinostories - Brussels</a>
+            </div>
+            <p class="program-description">
+                The program explores soundscapes from Balkan cinema by engaging with the languages, cultural histories and sonicities present in Brussels (and particularly Schaerbeek) beyond the clichés of an exotic and othered ‘Eastern European’ culture.
+            </p>
+        </section>
+
+        <!-- ALBANIAN FILM FESTIVAL -->
+        <section class="section">
+            <div class="section-title">
+                2019–2022 | <a href="https://culturalpro.art/categorie/ripensare-il-futuro/albania-si-gira-4-edizioni/" target="_blank" rel="noopener noreferrer">Albanian Film Festival "Albania, si Gira" - Rome</a>
+            </div>
+            <p class="program-description">
+                The festival promotes Albanian cinema in Italy in order to open a reflection on the complicated legacies of colonialism in Albanian-Italian relations. The event aims at inverting the dominant gaze on Albanians who are portrayed by Italian media and films as poor and criminals savages to be saved, civilised and disciplined by Italians. The selection also features Italian films in order to create cinematic dialogues that highlight Albanian resistance against Italian imperialism and that raise awareness about the violent racism and exploitation that Albanian migrants experience in Italy.
+            </p>
+            <div class="press-section">
+                <strong>Press:</strong>
+                <div class="press-item">
+                    • <a href="https://www.meridiano13.it/albania-si-gira-intervista-organizzatori/" target="_blank" rel="noopener noreferrer">Intervista con gli organizzatori — Meridiano 13</a>
+                </div>
+                <div class="press-item">
+                    • <a href="https://left.it/2019/04/03/lalbania-come-non-lavete-mai-vista-in-italia-alla-casa-del-cinema-di-roma/" target="_blank" rel="noopener noreferrer">L’Albania come non l’avete mai vista in Italia alla Casa del cinema di Roma — Left</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</div>
+</body>
+</html>
