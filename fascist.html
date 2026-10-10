@@ -3,139 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Survive the New Fascist Europe — Fabio Bego</title>
-
+    <title>THE_HOOKMAN_LORE — FASCIST_MONITORING // Fabio Bego</title>
     <style>
-        * {
-            box-sizing: border-box;
+        * { box-sizing: border-box; }
+        body { 
+            margin: 0; 
+            padding: 30px; 
+            background: #050805; 
+            color: #7CFF00; 
+            font-family: "Courier New", Courier, monospace; 
+            font-size: 14px; 
+            line-height: 1.4; 
         }
+        .page { max-width: 1100px; margin: auto; }
 
-        body {
-            margin: 0;
-            padding: 30px;
-            background: #050805;
-            color: #7CFF00;
-            font-family: "Courier New", Courier, monospace;
-            font-weight: normal;
-        }
-
-        .page {
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .header {
-            min-height: 70px;
+        .site-header { 
             border-top: 2px solid #7CFF00;
-            border-bottom: 2px solid #7CFF00;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            border-bottom: 2px solid #7CFF00; 
+            padding: 15px 0; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
             margin-bottom: 20px;
         }
+        .site-name { font-size: 20px; }
+        .back-link { color: #7CFF00; text-decoration: none; font-size: 16px; }
+        .back-link:hover { color: #B6FF66; }
 
-        .name {
-            font-size: 22px;
-            letter-spacing: 0;
-            font-weight: normal;
-        }
-
-        .back {
-            color: #7CFF00;
-            text-decoration: none;
-            font-size: 16px;
-            letter-spacing: 1px;
-            transition: color 0.15s ease;
-        }
-
-        .back:hover {
-            color: #B6FF66;
-        }
-
-        .content {
+        .content-frame {
             border: 2px solid #7CFF00;
-            padding: 40px;
+            padding: 30px;
+            background: #000000;
+        }
+
+        .graphic-container {
+            border: 1px dashed #7CFF00;
+            padding: 20px;
+            margin: 0 auto 30px auto;
+            max-width: 650px;
+            background: #050805;
             text-align: center;
         }
 
-        h1 {
-            font-size: 32px;
-            font-weight: normal;
-            margin: 20px 0 30px 0;
-            letter-spacing: 1px;
-            line-height: 1.3;
+        .hookman-svg {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            image-rendering: pixelated;
+            display: block;
+            margin: 0 auto 15px auto;
         }
 
-        /* 8-BIT ASCII / GRAPHIC BOX */
-        .pixel-art-box {
-            font-family: monospace;
-            white-space: pre;
-            font-size: 13px;
-            line-height: 1.1;
-            margin: 30px auto;
-            display: inline-block;
+        .status-header {
+            font-size: 15px;
+            border-top: 1px solid #7CFF00;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
             text-align: left;
-            border: 1px dashed #7CFF00;
-            padding: 20px;
-            background: #000;
         }
 
-        .status-msg {
-            font-size: 16px;
-            margin-top: 25px;
-            line-height: 1.6;
+        .detail-box {
+            border: 1px solid #7CFF00;
+            padding: 15px;
         }
 
-        .blink {
-            animation: blinker 1s linear infinite;
+        .detail-title {
+            font-weight: bold;
+            border-bottom: 1px solid #7CFF00;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            color: #B6FF66;
         }
 
-        @keyframes blinker {
-            50% { opacity: 0; }
-        }
+        .blink { animation: blinker 1.2s linear infinite; }
+        @keyframes blinker { 50% { opacity: 0; } }
 
         @media (max-width: 700px) {
             body { padding: 15px; }
-            .content { padding: 20px; }
-            h1 { font-size: 22px; }
-            .pixel-art-box { font-size: 9px; padding: 10px; }
+            .content-frame { padding: 15px; }
+            .site-name { font-size: 16px; }
         }
     </style>
 </head>
 <body>
 <div class="page">
 
-    <header class="header">
-        <div class="name">FABIO BEGO</div>
-        <a href="index.html" class="back">BACK</a>
+    <header class="site-header">
+        <div class="site-name">FABIO BEGO — MONITORING</div>
+        <a href="index.html" class="back-link">&lt; BACK</a>
     </header>
 
-    <main class="content">
+    <main class="content-frame">
 
-        <!-- 8-bit Banner Art -->
-        <div class="pixel-art-box">
- _____________________________________________________
-|  _________________________________________________  |
-| |                                                 | |
-| |   [!] WARNING: TRACKING FAR-RIGHT MOVEMENTS    | |
-| |                                                 | |
-| |          #   #  ###  #11#  ###                  | |
-| |          #   # #   # #  # #                     | |
-| |          ##### #   # ####  ##                   | |
-| |          #   # #   # #  #    #                  | |
-| |          #   #  ###  #  # ###                   | |
-| |                                                 | |
-| |_________________________________________________| |
-|_____________________________________________________|
+        <!-- 8-BIT VECTOR PIXEL GRAPHIC: HOOKMAN (BACK VIEW) -->
+        <div class="graphic-container">
+            <svg class="hookman-svg" viewBox="0 0 160 160" fill="#7CFF00" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background Alley / Fence Lines -->
+                <rect x="10" y="20" width="2" height="110" opacity="0.3"/>
+                <rect x="148" y="20" width="2" height="110" opacity="0.3"/>
+                <rect x="10" y="40" width="140" height="1" opacity="0.2"/>
+                <rect x="10" y="70" width="140" height="1" opacity="0.2"/>
+
+                <!-- Fedora / Hat (Back View) -->
+                <rect x="64" y="22" width="32" height="4"/>
+                <rect x="68" y="16" width="24" height="6"/>
+                <rect x="56" y="26" width="48" height="3"/>
+
+                <!-- Head / Neck Collar -->
+                <rect x="72" y="29" width="16" height="5"/>
+
+                <!-- Shearling Trench Coat (Back View & Shoulders) -->
+                <rect x="52" y="34" width="56" height="8"/>
+                <rect x="46" y="42" width="68" height="10"/>
+                <rect x="44" y="52" width="72" height="14"/>
+                
+                <!-- Coat Seams & Waist Belt -->
+                <rect x="42" y="66" width="76" height="6"/>
+                <rect x="78" y="34" width="4" height="60" opacity="0.4"/> <!-- Back Center Seam -->
+                <rect x="50" y="72" width="60" height="4"/> <!-- Belt Strap -->
+                
+                <!-- Lower Trench Coat / Tail -->
+                <rect x="40" y="76" width="80" height="16"/>
+                <rect x="38" y="92" width="84" height="18"/>
+                <rect x="36" y="110" width="88" height="12"/>
+
+                <!-- Left Arm & Shearling Cuff -->
+                <rect x="34" y="46" width="12" height="35"/>
+                <rect x="30" y="81" width="14" height="6"/> <!-- Cuff -->
+                <rect x="32" y="87" width="10" height="8"/> <!-- Hand -->
+
+                <!-- Right Arm & Large Rusty Hook (Lower Right) -->
+                <rect x="114" y="46" width="12" height="35"/>
+                <rect x="116" y="81" width="14" height="6"/> <!-- Cuff -->
+                
+                <!-- The Rusty Hook Arc -->
+                <rect x="122" y="87" width="4" height="16"/>
+                <rect x="122" y="103" width="12" height="4"/>
+                <rect x="130" y="95" width="4" height="10"/>
+                <rect x="128" y="91" width="4" height="4"/>
+
+                <!-- Coat Patches & Wear Marks -->
+                <rect x="54" y="82" width="10" height="8" opacity="0.5"/>
+                <rect x="94" y="96" width="12" height="10" opacity="0.5"/>
+
+                <!-- Legs / Boots -->
+                <rect x="52" y="122" width="18" height="18"/>
+                <rect x="90" y="122" width="18" height="18"/>
+                <rect x="48" y="140" width="24" height="6"/>
+                <rect x="88" y="140" width="24" height="6"/>
+
+                <!-- Swarming Bees (Pixel Dots around figure) -->
+                <rect x="25" y="30" width="2" height="2"/>
+                <rect x="30" y="55" width="2" height="2"/>
+                <rect x="135" y="40" width="2" height="2"/>
+                <rect x="140" y="75" width="2" height="2"/>
+                <rect x="20" y="90" width="2" height="2"/>
+                <rect x="130" y="115" width="2" height="2"/>
+                <rect x="105" y="25" width="2" height="2"/>
+                <rect x="55" y="15" width="2" height="2"/>
+            </svg>
+
+            <div class="status-header">
+                [ SYS_MONITOR: SUBJECT_ID // THE_HOOKMAN (REAR VIEW) ]
+            </div>
         </div>
 
-        <h1>HOW TO SURVIVE THE NEW FASCIST EUROPE</h1>
+        <!-- BLOG / LORE DETAILS -->
+        <h1 style="text-align: center; font-size: 26px; font-weight: normal; margin-bottom: 25px;">
+            HOW TO SURVIVE THE NEW FASCIST EUROPE
+        </h1>
 
-        <p class="status-msg">
-            [SYSTEM STATUS: INITIALIZING BLOG ARCHIVE...]<br>
-            A repository and reflection on contemporary far-right politics and resistance.<br><br>
-            <span class="blink">_ ARTICLES COMING SOON</span>
-        </p>
+        <div class="details-grid">
+            <div class="detail-box">
+                <div class="detail-title">SUBJECT ANALYSIS</div>
+                <p><strong>COAT & STRUCTURE:</strong> Viewed from behind, the heavy shearling coat shows marks of endurance and historical violence, with worn patches along the back seam.</p>
+            </div>
+
+            <div class="detail-box">
+                <div class="detail-title">THE HOOK</div>
+                <p><strong>RIGHT APPENDAGE:</strong> Extending past the right sleeve cuff, the industrial iron hook is designed directly into the character structure as an emblem of resistance.</p>
+            </div>
+
+            <div class="detail-box">
+                <div class="detail-title">MONITORING STATUS</div>
+                <p>[ARCHIVE INITIALIZING...]<br>Tracking contemporary far-right movements and urban lore.<br><br><span class="blink">_ HE IS COMING</span></p>
+            </div>
+        </div>
 
     </main>
 
